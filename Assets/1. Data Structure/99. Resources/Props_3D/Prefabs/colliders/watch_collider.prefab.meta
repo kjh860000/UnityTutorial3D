@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 07e21567162ae0344b47604d2ca03b55
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Prefabs/colliders/watch_collider.prefab
+  uploadId: 586663

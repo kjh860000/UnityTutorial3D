@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 66f725f4aa3ee1948abb31eedd888949
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Prefabs/colliders/scroll_collider.prefab
+  uploadId: 586663

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3844f3e2119b49e4fbc86596f8b8619a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Prefabs/colliders/barrel_lowpoly_collider.prefab
+  uploadId: 586663

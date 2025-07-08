@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bcc8da134597b874185420b78a6cd24b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 170798
+  packageName: Sherbb's Particle Collection
+  packageVersion: 1.0
+  assetPath: Assets/Sherbbs Particle Collection/Materials/VertexUnlitDiffuseCircle.mat
+  uploadId: 379554

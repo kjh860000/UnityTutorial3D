@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5b6011c25de89044d9b054f44c36ada6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Prefabs/colliders/bomb_collider.prefab
+  uploadId: 586663

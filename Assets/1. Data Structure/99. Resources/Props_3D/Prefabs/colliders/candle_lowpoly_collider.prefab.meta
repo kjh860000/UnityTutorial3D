@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 24146971b5539054e8842e3d08635df5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Prefabs/colliders/candle_lowpoly_collider.prefab
+  uploadId: 586663

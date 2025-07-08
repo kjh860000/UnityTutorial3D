@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73d6806ac7dd73d41ac11a8af1fe2aa4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221035
+  packageName: Props 3D
+  packageVersion: 1.02
+  assetPath: Assets/Props_3D/Materials/particle_sparkle.mat
+  uploadId: 586663
