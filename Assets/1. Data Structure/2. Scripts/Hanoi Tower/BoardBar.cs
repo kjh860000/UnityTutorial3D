@@ -12,12 +12,11 @@ public class BoardBar : MonoBehaviour
     {
         if (!HanoiTower.isSelected)
         {
-            HanoiTower.isSelected = true;
-            HanoiTower.selectDonut = PopDonut();
+            HanoiTower.selectedDonut = PopDonut();
         }
         else
         {
-            PushDonut(HanoiTower.selectDonut);
+            PushDonut(HanoiTower.selectedDonut);
         }
     }
 
@@ -50,8 +49,9 @@ public class BoardBar : MonoBehaviour
         if (!CheckDonut(donut))
             return;
 
+        HanoiTower.moveCount++;
         HanoiTower.isSelected = false;
-        HanoiTower.selectDonut = null;
+        HanoiTower.selectedDonut = null;
 
         donut.transform.position = transform.position + Vector3.up * 5f;
         donut.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
@@ -62,8 +62,15 @@ public class BoardBar : MonoBehaviour
 
     public GameObject PopDonut()
     {
-        GameObject donut = barStack.Pop(); // Stack¿¡¼­ GameObject¸¦ ²¨³»´Â ±â´É
+        if (barStack.Count > 0)
+        {
+            HanoiTower.currBar = this;
+            HanoiTower.isSelected = true;
+            GameObject donut = barStack.Pop(); // Stack¿¡¼­ GameObject¸¦ ²¨³»´Â ±â´É
 
-        return donut; // ²¨³½ µµ³ÓÀ» ¹ÝÈ¯
+            return donut; // ²¨³½ µµ³ÓÀ» ¹ÝÈ¯
+        }
+
+        return null;
     }
 }
