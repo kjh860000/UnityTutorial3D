@@ -18,6 +18,7 @@ public class FPSPlayerFire : MonoBehaviour
 
     public GameObject crosshair01;
     public GameObject crosshair02;
+    public GameObject crosshair02_zoom;
 
     public GameObject weaponG;
     public GameObject weaponZ;
@@ -83,9 +84,21 @@ public class FPSPlayerFire : MonoBehaviour
                                 * throwPower, ForceMode.Impulse);
                     break;
                 case WeaponMode.Sniper: // 저격 모드일 때 마우스 오른쪽 -> 확대/축소 조준경
-                    float fov = ZoomMode ? 60f : 15f;
-                    Camera.main.fieldOfView = fov;
                     ZoomMode = !ZoomMode;
+
+                    float fov = ZoomMode ? 15f : 60f;
+                    Camera.main.fieldOfView = fov;
+
+                    if (ZoomMode)
+                    {
+                        crosshair02_zoom.SetActive(true);
+                        crosshair02.SetActive(false);
+                    }
+                    else
+                    {
+                        crosshair02_zoom.SetActive(false);
+                        crosshair02.SetActive(true);
+                    }
                     break;
             }
         }
@@ -101,6 +114,7 @@ public class FPSPlayerFire : MonoBehaviour
             weapon02.SetActive(false);
             crosshair01.SetActive(true);
             crosshair02.SetActive(false);
+            crosshair02_zoom.SetActive(false);
             weaponG.SetActive(true);
             weaponZ.SetActive(false);
         }
@@ -118,7 +132,6 @@ public class FPSPlayerFire : MonoBehaviour
             weaponZ.SetActive(true);
         }
     }
-
     IEnumerator ShootEffectOn(float duration)
     {
         int num = Random.Range(0, eff_Flash.Length);
